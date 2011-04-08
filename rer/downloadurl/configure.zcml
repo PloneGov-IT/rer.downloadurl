@@ -18,4 +18,12 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 		
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="RER: Download file for WebTrends uninstall"
+      directory="profiles/uninstall"
+      description=""
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+	  
 </configure>

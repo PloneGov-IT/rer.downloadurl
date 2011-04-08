@@ -3,9 +3,10 @@
 
  <object name="rer_downloadurl_custom_templates"
     meta_type="Filesystem Directory View"
-    directory="rer.downloadurl:skins/rer_downloadurl_custom_templates"/>
+    directory="rer.downloadurl:skins/rer_downloadurl_custom_templates"
+	remove="True"/>
 
- <skin-path name="*" based-on="Plone Default">
+ <skin-path name="*" based-on="Plone Default" remove="True">
   <layer name="rer_downloadurl_custom_templates"
      insert-after="custom"/>
  </skin-path>
