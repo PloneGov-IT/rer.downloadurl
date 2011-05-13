@@ -1,7 +1,12 @@
 Changelog
 =========
 
+1.0.1 (Unreleased)
+------------------
+
+* supporto z3c.autoinclude [keul]
+
 1.0.0 (2011/04/08)
 ------------------
 
-- Initial release
+* Initial release

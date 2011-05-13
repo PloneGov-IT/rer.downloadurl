@@ -1,11 +1,11 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.0.0'
+version = '1.0.1dev'
 
 setup(name='rer.downloadurl',
       version=version,
-      description="A simple product that fix the downloard url for WebTrends",
+      description="A simple product that fix the download url of Plone file, adding also the file name to it",
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
@@ -14,7 +14,7 @@ setup(name='rer.downloadurl',
         "Programming Language :: Python",
         "Framework :: Plone",
         ],
-      keywords='',
+      keywords='file download url',
       author='Redturtle Technology',
       author_email='sviluppoplone@redturtle.net',
       url='http://svn.plone.org/svn/collective/',

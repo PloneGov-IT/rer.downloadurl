@@ -6,9 +6,8 @@
     directory="rer.downloadurl:skins/rer_downloadurl_custom_templates"
 	remove="True"/>
 
- <skin-path name="*" remove="True">
-  <layer name="rer_downloadurl_custom_templates"
-     insert-after="custom"/>
+ <skin-path name="*">
+  <layer name="rer_downloadurl_custom_templates" remove="True"/>
  </skin-path>
 
 </object>
