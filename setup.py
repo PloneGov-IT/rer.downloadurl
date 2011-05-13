@@ -12,6 +12,7 @@ setup(name='rer.downloadurl',
       # http://pypi.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
         "Programming Language :: Python",
+        "Framework :: Plone",
         ],
       keywords='',
       author='Redturtle Technology',
@@ -28,5 +29,7 @@ setup(name='rer.downloadurl',
       ],
       entry_points="""
       # -*- Entry points: -*-
+      [z3c.autoinclude.plugin]
+      target = plone
       """,
       )
