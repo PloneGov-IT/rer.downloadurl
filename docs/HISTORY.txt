@@ -1,18 +1,21 @@
 Changelog
 =========
 
-1.0.2 (unreleased)
+2.0.0 (unreleased)
 ------------------
 
-- Nothing changed yet.
+Plone 4 required
 
+- Now managing also the image downalod URL [keul]
+- Updated templated to Plone 4 styles [keul]
+- Can be uninstalled [keul]
 
 1.0.1 (2012-08-02)
 ------------------
 
-* supporto z3c.autoinclude [keul]
+- supporting z3c.autoinclude [keul]
 
-1.0.0 (2011/04/08)
+1.0.0 (2011-04-08)
 ------------------
 
-* Initial release
+- Initial release

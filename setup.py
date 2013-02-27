@@ -1,23 +1,24 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.0.2.dev0'
+version = '2.0.0.dev0'
 
 setup(name='rer.downloadurl',
       version=version,
-      description="A simple product that fix the download url of Plone file, adding also the file name to it",
-      long_description=open("README.txt").read() + "\n" +
+      description="Fix the download url of Plone files, adding also the file name to it",
+      long_description=open("README.rst").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
       # http://pypi.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
         "Programming Language :: Python",
         "Framework :: Plone",
+        "Framework :: Plone :: 4.2",
         ],
       keywords='file download url',
       author='Redturtle Technology',
-      author_email='sviluppoplone@redturtle.net',
-      url='http://svn.plone.org/svn/collective/',
+      author_email='sviluppoplone@redturtle.it',
+      url='https://develop.regione.emilia-romagna.it/svn/plone/prodotti/rer.downloadurl/',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['rer'],
@@ -25,6 +26,7 @@ setup(name='rer.downloadurl',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'Products.CMFPlone>4.0b1'
           # -*- Extra requirements: -*-
       ],
       entry_points="""

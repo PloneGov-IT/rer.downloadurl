@@ -9,12 +9,11 @@
 
   <include file="skins.zcml" />
   
-  <!-- Register the installation GenericSetup extension profile -->
   <genericsetup:registerProfile
       name="default"
       title="RER: Download file for WebTrends"
       directory="profiles/default"
-      description=""
+      description="Fix the download url of Plone files, adding also the file name to it"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 		
@@ -25,5 +24,15 @@
       description=""
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
-	  
+
+  <genericsetup:upgradeStep
+        title="Upgrade Download file for WebTrends to version 2.0"
+        description="Upgrade Download file for WebTrends from 1.0 to version 2.0"
+        source="1.0.0"
+        destination="2000"
+        handler=".setuphandlers.migrateTo2000"
+        sortkey="1"
+        profile="rer.downloadurl:default"
+    />
+
 </configure>
